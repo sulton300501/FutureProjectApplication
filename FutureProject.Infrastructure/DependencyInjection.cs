@@ -2,6 +2,7 @@
 using FutureProject.Infrastructure.Persistance;
 using FutureProjectApplication.Abstraction;
 using FutureProjectApplication.Abstraction.IService;
+using FutureProjectApplication.Service.AuthService;
 using FutureProjectApplication.Service.UserServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,7 @@ namespace FutureProject.Infrastructure
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAuthService,AuthService>();
             return services;
         }
     }

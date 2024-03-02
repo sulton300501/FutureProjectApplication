@@ -20,6 +20,7 @@ namespace FutureProjectApplication.Service.AuthService
     {
         private readonly IConfiguration _conf;
         private readonly IUserService _userService;
+        
 
         public AuthService(IConfiguration conf)
         {
