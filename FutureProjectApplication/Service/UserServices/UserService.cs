@@ -25,6 +25,7 @@ namespace FutureProjectApplication.Service.UserServices
                 Email = userDTO.Email,
                 Login = userDTO.Login,
                 Password = userDTO.Password,
+                Role = userDTO.Role,
             };
             var result = await _userRepository.Create(user);
             return result;
@@ -44,6 +45,7 @@ namespace FutureProjectApplication.Service.UserServices
             {
                 Name=model.Name,
                 Email=model.Email,
+                Role=model.Role,
             });
             return result;
         }
@@ -89,6 +91,7 @@ namespace FutureProjectApplication.Service.UserServices
                     Email = userDTO.Email,
                     Login = userDTO.Login,
                     Password = userDTO.Password,
+                    Role = userDTO.Role,
                 };
                 var result = await _userRepository.Update(user);
 
