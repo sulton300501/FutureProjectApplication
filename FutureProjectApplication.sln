@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureProjectApplication", "FutureProjectApplication\FutureProjectApplication.csproj", "{A23A4187-70FD-4BE9-9F59-2D5F39702B81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutureProjectApplication", "FutureProjectApplication\FutureProjectApplication.csproj", "{A23A4187-70FD-4BE9-9F59-2D5F39702B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureProject.Domain", "FutureProject.Domain\FutureProject.Domain.csproj", "{3DF57EC0-ED15-4026-B7CC-0E597B625E8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutureProject.Domain", "FutureProject.Domain\FutureProject.Domain.csproj", "{3DF57EC0-ED15-4026-B7CC-0E597B625E8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureProject.Infrastructure", "FutureProject.Infrastructure\FutureProject.Infrastructure.csproj", "{B6AF7B6E-49C3-4261-82D2-23806630F05E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutureProject.Infrastructure", "FutureProject.Infrastructure\FutureProject.Infrastructure.csproj", "{B6AF7B6E-49C3-4261-82D2-23806630F05E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureProject.API", "FutureProject.API\FutureProject.API.csproj", "{401018BE-1D1D-4D29-9EE8-8134460D9EFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutureProject.API", "FutureProject.API\FutureProject.API.csproj", "{401018BE-1D1D-4D29-9EE8-8134460D9EFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BC8B595D-2543-4872-B3B6-AD34F6BB4E7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1F8E1F58-4A9A-428B-A0A1-04C2AA13520A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureProject.Application.Tests", "FutureProject.Application.Tests\FutureProject.Application.Tests.csproj", "{266CB13E-F599-44B4-B213-96BDC21DE115}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{401018BE-1D1D-4D29-9EE8-8134460D9EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{401018BE-1D1D-4D29-9EE8-8134460D9EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{401018BE-1D1D-4D29-9EE8-8134460D9EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266CB13E-F599-44B4-B213-96BDC21DE115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266CB13E-F599-44B4-B213-96BDC21DE115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266CB13E-F599-44B4-B213-96BDC21DE115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266CB13E-F599-44B4-B213-96BDC21DE115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A23A4187-70FD-4BE9-9F59-2D5F39702B81} = {BC8B595D-2543-4872-B3B6-AD34F6BB4E7C}
+		{3DF57EC0-ED15-4026-B7CC-0E597B625E8D} = {BC8B595D-2543-4872-B3B6-AD34F6BB4E7C}
+		{B6AF7B6E-49C3-4261-82D2-23806630F05E} = {BC8B595D-2543-4872-B3B6-AD34F6BB4E7C}
+		{401018BE-1D1D-4D29-9EE8-8134460D9EFA} = {BC8B595D-2543-4872-B3B6-AD34F6BB4E7C}
+		{266CB13E-F599-44B4-B213-96BDC21DE115} = {1F8E1F58-4A9A-428B-A0A1-04C2AA13520A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B41936E-E3C3-4B56-B3B8-978D662F3FBD}
